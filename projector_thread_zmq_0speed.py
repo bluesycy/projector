@@ -93,14 +93,21 @@ def zmq_server(port):
         
 def main():
     screen_width, screen_height = 1920, 1080
-    pygame.init()
-    x = 0
-    y = 0
-    os.environ['SDL_VIDEO_FULLSCREEN_DISPLAY'] = f"{x},{y}"
-    os.environ['SDL_VIDEO_FULLSCREEN_HEAD'] = "1"
 
-    # screen = pygame.display.set_mode((screen_width, screen_height))
-    screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+    x = screen_width
+    y = 0
+    os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (x,y)
+    # os.environ['SDL_VIDEO_FULLSCREEN_HEAD'] = "1"
+
+
+
+
+    pygame.init()
+
+    screen = pygame.display.set_mode((screen_width, screen_height), flags = pygame.NOFRAME)
+    # screen = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)
+
+
     pygame.display.set_caption('Moving Stripes')
 
     speed = 0
