@@ -2,10 +2,10 @@
 
 Check `/code` folder for up-to-date code
 
-1. (optional) generate calibration image `data/image_dmd.npy`
+1. (optional) generate calibration image `image_dmd.npy`
 2. project the calibration image
 ```
-python3 projector_dmd.py data/image_dmd.npy
+python3 projector_dmd.py image_dmd.npy
 ```
 after the code above, collect background image
 ```
