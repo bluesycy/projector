@@ -1,4 +1,4 @@
-# projector
+# Projector
 
 Check `/code` folder for up-to-date code, if no `/data` folder is created, create one under `/projector`
 
