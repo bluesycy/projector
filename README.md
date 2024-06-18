@@ -1,12 +1,14 @@
 # projector
 
-Check /code folder for up-to-date code
+Check `/code` folder for up-to-date code
 
 1. (optional) generate calibration image `data/image_dmd.npy`
 2. project the calibration image
 ```
 python3 projector_dmd.py data/image_dmd.npy
-#after the code above, collect background image
+```
+after the code above, collect background image
+```
 evt-viewer /home/charlie/Notebooks/protocols/evt_bg_collection.h5
 ```
 4. put the chamber on, save the background image again
