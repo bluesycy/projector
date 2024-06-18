@@ -1,6 +1,24 @@
 # Projector
 
-Check `/code` folder for up-to-date code, if no `/data` folder is created, create one under `/projector`
+Repo for generating projector image for an desired output at the image plane. Check `/code` folder for up-to-date code, if no `/data` folder is created, create one under `/projector`
+
+## Dependencies
+Install miniconda: https://docs.anaconda.com/miniconda/, then install the preconfigured environment as follows:
+```
+conda env create --name envname --file=environments.yml
+```
+Activate environment:
+```
+conda activate -n envname
+```
+Add env kernel (and use that kernel for following notebooks):
+```
+python -m ipykernel install --user --name=projector
+```
+
+For julia packages, please refer to correspondong notebooks.
+
+## Steps
 
 1. (optional) Generate calibration image `image_dmd.npy`
 2. Take off the ir filter, project the calibration image (keep the pattern on): 
