@@ -32,7 +32,7 @@ def array_to_surface(array):
 def display_loop(screen, screen_width, screen_height):
     global mode
 
-    array = np.load('roi_transform.npy')
+    array = np.load('../data/roi_transform.npy')
     # Convert the array to a Pygame surface
     surface = array_to_surface(array)
 
